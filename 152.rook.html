@@ -1,0 +1,109 @@
+<div class="container">
+  <div class="head">
+    <div class="upper-head">
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+    </div>
+    <div class="lower-head">
+    </div>
+</div>
+  <div class="neck"></div>
+  <div class="body"></div>
+  <div class="leg"></div>
+  <div class="foot"></div>
+</div>
+<style>
+  body, .container, .upper-head{
+    background: #62306D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   .container{
+    flex-direction: column;
+    gap: 0.28rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .head,.neck, .body, .leg, .foot{
+    background: #F7EC7D;
+  }
+  .head{
+    width: 90px;
+    background: #62306D;
+  }
+  .upper-head{
+    justify-content: space-between;
+    width: 100%;
+    height: 36px;
+    position: relative;
+  }
+  .a, .b, .c{
+    width: 10px;
+    height: 100%;
+    background: #F7EC7D;
+    border-radius: 2rem 2rem 0 0;
+  }
+  .b::before, .b::after{
+    content: "";
+    position: absolute;
+    background: #62306D;
+    width: 30px;
+    height: 44px;
+    border-radius: 0 0 0.4rem 0.4rem;
+  }
+  .b::before{
+    left:10px;
+  }
+  .b::after{
+    right:10px;
+  }
+  .lower-head{
+    width: 100%;
+    height: 24px;
+    background: #F7EC7D;
+    border-radius: 0 0 0.6rem 0.6rem;
+  }
+  .neck{
+    width:60px;
+    height: 10px;
+    border-radius: 2rem;
+  }
+  .body{
+    width: 100px;
+    height: 66px;
+    position: relative;
+  }
+  .body::before, .body::after{
+    content:"";
+    width: 30px;
+    height: 70px;
+    background: #62306D;
+    position: absolute;
+    border-radius: 0  0 100% 0;
+  }
+  .body::after{
+    right: 0;
+    border-radius: 0 0 0 100%;
+  }
+  .leg{
+    width: 110px;
+    height: 10px;
+    border-radius: 2rem;
+  }
+  .foot{
+    width: 140px;
+    height: 25px;
+    border-radius: 4rem 4rem 2rem 2rem;
+  }  
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
